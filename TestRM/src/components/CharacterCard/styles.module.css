@@ -1,0 +1,24 @@
+.CardWrapper{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.PhotoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 75px;
+    width: 75px;
+}

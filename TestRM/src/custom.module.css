@@ -1,0 +1,39 @@
+.customInput {
+    background-color: #17a817;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #075a0e;
+    border-bottom: 1px solid #086108!important;
+    color: white;
+}
+
+.inputAdornedStart {
+    margin: 10px;
+}
+
+.custom_input_base::placeholder {
+    color: #E6E6E6!important;
+}
+
+.custom_input_base {
+    color: white!important;
+}
+
+.customInput:hover {
+    border-bottom: 1px solid #043d15!important;
+}
+
+.customInput:before {
+    border-bottom: none!important;
+    content: none!important;
+}
+
+.customInput:after {
+    border-bottom: none!important;
+    content: none!important;
+}
+
+.customInput_focused:after {
+    border-bottom: none!important;
+    content: none!important;
+}
