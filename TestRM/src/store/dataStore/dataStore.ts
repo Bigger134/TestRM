@@ -7,10 +7,12 @@ export class DataStore {
     protected readonly rootStore: RootStore
     characters: Character[];
     pages: number;
+    currentPage: number;
     constructor(rootStore: RootStore) {
         this.rootStore = rootStore;
         this.characters = [];
         this.pages = 0;
+        this.currentPage = 1;
         makeAutoObservable(this, {}, { autoBind: true })
     }
 
@@ -23,5 +25,10 @@ export class DataStore {
     async getPageById(id: number) {
         const req = await api.getPageById(id);
         this.characters = req.map((character) => new Character(this.rootStore, character))
+    }
+
+    changePage(page: number) {
+        this.currentPage = page;
+        this.getPageById(page);
     }
 }
